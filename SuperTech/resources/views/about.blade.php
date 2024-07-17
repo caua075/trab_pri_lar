@@ -2,7 +2,6 @@
 
 @section('title', 'Sobre Nós')
 @section('content')
-
     <div class="container mt-5">
         <h1>Sobre a SuperTech</h1>
         <p>Bem-vindo à <strong>SuperTech</strong>, sua loja de confiança para todos os componentes e acessórios de informática! Fundada com a missão de oferecer produtos de alta qualidade e um atendimento excepcional, a SuperTech é o destino ideal para entusiastas de tecnologia, gamers, profissionais de TI e todos aqueles que buscam as melhores soluções em hardware.</p>
@@ -32,5 +31,4 @@
         
         <p>Venha conhecer a SuperTech e descubra um novo mundo de possibilidades tecnológicas. Sua satisfação é nossa prioridade, e estamos aqui para ajudá-lo a alcançar seus objetivos com os melhores componentes e serviços do mercado. <strong>SuperTech – A Tecnologia ao Seu Alcance.</strong></p>
     </div>
-
 @endsection
