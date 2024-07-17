@@ -4,7 +4,7 @@
 
     <div class="container">
         <h1 >Criar Produto</h1>
-        <form action="/products" method="POST">
+        <form action="/products" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="mb-3">
                 <label for="name" class="form-label">Nome do Produto</label>
@@ -16,10 +16,10 @@
                 <input type="number" class="form-control" id="price" name="price" step="0.01" required>
             </div>
 
-            <!-- <div class="mb-3">
+            <div class="mb-3">
                 <label for="image" class="form-label">Imagem do Produto</label>
                 <input type="file" class="form-control" id="image" name="image" required>
-            </div> -->
+            </div>
 
             <div class="mb-3">
                 <label for="description" class="form-label">Descrição</label>

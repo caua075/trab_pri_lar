@@ -15,12 +15,10 @@ use App\Http\Controllers\ProductController;
 */
 
 Route::get('/', [ProductController::class, 'index']);
+Route::get('/about', [ProductController::class, 'about']);
 Route::get('/products/create', [ProductController::class, 'create']);
-
-Route::get('/about', function () {
-    return view('about');
-})->name('about');
-
-
+Route::get('/products/{id}', [ProductController::class, 'show']);
 Route::post('/products', [ProductController::class, 'store']);
-Route::get('/products/{product}', [ProductController::class, 'show']);
+
+
+

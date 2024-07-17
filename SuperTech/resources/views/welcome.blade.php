@@ -30,14 +30,14 @@
         <h2 id="prod-dest">Produtos em Destaque</h2>
         <div class="row">
             @foreach($products as $product)
-                <div class="col-md-4">
+                <div class="col-md-4" id="cards-container">
                     <div class="card mb-4">
-                        <img src="/img/logo.png" class="card-img-top" alt="{{ $product->name }}">
+                        <img src="/img/events/{{ $product->image }}" class="card-img-top" alt="{{ $product->name }}">
                         <div class="card-body">
                             <h5 class="card-title">{{ $product->name }}</h5>
                             <p class="card-text">{{ $product->description }}</p>
                             <p class="card-text">R${{ $product->price }}</p>
-                            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                            <a href="/products/{{ $product->id }}" class="btn btn-primary">Saber mais</a>
                         </div>
                     </div>
                 </div>

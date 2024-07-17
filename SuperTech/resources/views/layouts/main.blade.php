@@ -46,10 +46,12 @@
             </header>
             
             <main>
-                <div class="container">
-                    @if(session('msg'))
-                        <p class="msg">{{ session('msg') }}</p>
-                    @endif
+                <div class="container-fluid">
+                    <div class="row">
+                        @if(session('msg'))
+                            <p class="msg">{{ session('msg') }}</p>
+                        @endif
+                    </div>
                     @yield('content')
                 </div>
             </main>
