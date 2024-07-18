@@ -11,7 +11,7 @@
                 <h2>{{ $product->name }}</h2>
                 <p><strong>Preço:</strong> R$ {{ $product->price }}</p>
                 <p><strong>Descrição:</strong> {{ $product->description }}</p>
-                <button class="btn btn-primary">Adicionar ao Carrinho</button>
+                <a href="/add-to-cart/{{ $product->id }}" class="btn btn-primary">Adicionar ao Carrinho</a>
             </div>
         </div>
     </div>
