@@ -37,7 +37,7 @@
                                 <a class="nav-link" href="/carrinho-compras"><ion-icon name="cart-outline"></ion-icon></a>
                             </li>
                         </ul>
-                        <form class="d-flex p-3">
+                        <form class="d-flex p-3" action="/#prod-dest" method="GET">
                             <input class="form-control me-2" type="text" name="search" id="search" placeholder="Procurar por ...">
                             <button class="btn btn-outline-primary" type="submit">Buscar</button>
                         </form>

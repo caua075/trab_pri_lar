@@ -12,6 +12,7 @@
         </div>
             <a href="/about" class="btn btn-primary">Saiba Mais</a>
         <div class="row cta-container">
+
             <h2>Descubra nossa seleção de alta tecnologia em equipamentos de informática!</h2>
             <ul id="prods" class="row">
                 <li class="list-group-item h5"><ion-icon name="chevron-forward-outline"></ion-icon>HD's</li>
@@ -19,14 +20,14 @@
                 <li class="list-group-item h5"><ion-icon name="chevron-forward-outline"></ion-icon>Memórias RAM</li>
                 <li class="list-group-item h5"><ion-icon name="chevron-forward-outline"></ion-icon>Monitores</li>
                 <li class="list-group-item h5"><ion-icon name="chevron-forward-outline"></ion-icon>Processadores</li>
-                <li class="list-group-item h5"><ion-icon name="chevron-forward-outline"></ion-icon>Placas-mãe</li>
-                <li class="list-group-item h5"><ion-icon name="chevron-forward-outline"></ion-icon>Fontes de alimentação</li>
-                <li class="list-group-item h5"><ion-icon name="chevron-forward-outline"></ion-icon>Gabinetes</li>
                 <li class="list-group-item h5"><ion-icon name="chevron-forward-outline"></ion-icon>Entre outros</li>
             </ul>
         </div>
             <a href="#prod-dest" class="cta-button btn btn-primary">Veja nossos produtos</a>
         
+        @if($search)
+            <h2>Buscando por: {{ $search }}</h2>
+        @endif
         <h2 id="prod-dest">Produtos em Destaque</h2>
         <div class="row">
             @foreach($products as $product)
@@ -42,6 +43,10 @@
                     </div>
                 </div>
             @endforeach
+
+            @if(count($products) == 0 && $search)
+                <p>Não há produtos disponíveis no momento com {{$search}}! <a href="/" class="link-info">Ver todos</a></p>
+            @endif
         </div>
     </div>
 @endsection
