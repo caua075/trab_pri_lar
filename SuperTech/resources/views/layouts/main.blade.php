@@ -12,7 +12,7 @@
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
 
-        <!-- CSS e JS da Aplicação -->
+        <!-- CSS da Aplicação -->
         <link rel="stylesheet" href="/css/style.css">
     </head>
     <body>
@@ -61,8 +61,13 @@
             </footer>
         </div>
     </body>
+    <!-- JS da Aplicação -->
+    <script src="/js/script.js"></script>
+
     <!-- JS Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Ionicons -->
     <script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </html>
 
