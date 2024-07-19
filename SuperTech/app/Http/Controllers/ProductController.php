@@ -53,4 +53,10 @@ class ProductController extends Controller
         $product = Product::findOrFail($id);
         return view('products.show', ['product' => $product]);
     }
+
+    public function dashboard(){
+        $products = Product::all();
+
+        return view('products.dashboard', ['products' => $products]);
+    }
 }

@@ -110,6 +110,21 @@ body {
     border-radius: 1cap;
 }
 
+/* -- dashboard -- */
+.zoom {
+    overflow: hidden;
+    position: relative;
+}
+  
+.zoom img {
+    animation: pular-frente 2s ease-in-out infinite;
+    transition: transform 0.5s ease-in-out;
+}
+
+.zoom img:hover {
+    transform: scale(1.2);
+}
+
 /* -- footer -- */
 
 footer {

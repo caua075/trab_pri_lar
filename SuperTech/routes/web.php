@@ -36,9 +36,5 @@ Route::get('/carrinho-compras', [CartController::class, 'viewCart']);
 Route::post('/checkout', [CheckoutController::class, 'checkout']);
 Route::get('/checkout', [CheckoutController::class, 'checkoutPage']);
 
-Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified',
-])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
-});
+//Page dashboard
+Route::get('/dashboard', [ProductController::class, 'dashboard']);
