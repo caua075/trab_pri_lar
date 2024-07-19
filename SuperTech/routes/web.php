@@ -23,7 +23,7 @@ Route::get('/', [ProductController::class, 'index']);
 Route::get('/about', [ProductController::class, 'about']);
 
 //Page products
-Route::get('/products/create', [ProductController::class, 'create']);
+Route::get('/products/create', [ProductController::class, 'create'])->middleware('auth');
 Route::get('/products/{id}', [ProductController::class, 'show']);
 Route::post('/products', [ProductController::class, 'store']);
 
@@ -35,3 +35,10 @@ Route::get('/carrinho-compras', [CartController::class, 'viewCart']);
 //Page checkout
 Route::post('/checkout', [CheckoutController::class, 'checkout']);
 Route::get('/checkout', [CheckoutController::class, 'checkoutPage']);
+
+Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified',
+])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
+});

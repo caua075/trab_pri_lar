@@ -33,6 +33,20 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="/products/create">Cadastro de Produtos</a>
                             </li>
+                            @auth
+                                <form action="/logout" method="POST">
+                                    @csrf
+                                        <a href="/logout" class="nav-link" onclick="event.preventDefault(); this.closest('form').submit();">Sair</a>
+                                </form>
+                            @endauth
+                            @guest
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/login">Login</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/register">Cadastro</a>
+                                </li>
+                            @endguest
                             <li class="nav-item">
                                 <a class="nav-link" href="/carrinho-compras"><ion-icon name="cart-outline"></ion-icon></a>
                             </li>

@@ -42,6 +42,8 @@ class ProductController extends Controller
             $requestImage->move(public_path('img/events'), $imageName);
             $product->image = $imageName;
         }
+
+        $user = auth()->user();
         
         $product->save();
         return redirect('/')->with('msg', 'Produto Cadastrado!');
