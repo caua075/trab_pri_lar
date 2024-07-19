@@ -21,7 +21,7 @@
 
                 if (seconds <= 0) {
                     clearInterval(timer);
-                    window.location.href = "";
+                    window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSdxaLMUo-keH9zqKfpzz1_7S5bJYY9uSgSvPyu9SQHHG0RKkQ/viewform";
                 }
             }, 1000); // 1000 milissegundos = 1 segundo
         }
