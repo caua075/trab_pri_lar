@@ -44,4 +44,3 @@ Agradecemos a todos os envolvidos por sua colaboração e empenho neste projeto.
 ## Conclusão
 
 Estamos confiantes de que nosso projeto não só atende aos requisitos da disciplina, mas também oferece uma experiência valiosa para os usuários. A coleta e análise de feedback serão essenciais para a melhoria contínua da plataforma, garantindo que ela permaneça relevante e útil.
-"""
